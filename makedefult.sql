@@ -28,10 +28,10 @@ timi int references fasteignaverd(timi)
 
 create table utskrifadirhaskola(
 timi int references fasteignaverd(timi),
-'yngri' int,
-20-21 int,
-22-24 int,
-25-29 int
+yngri int,
+aldur20til21ara int,
+aldur22til24ara int,
+aldur25til29 int
 );
 
 create table leiguverd(
