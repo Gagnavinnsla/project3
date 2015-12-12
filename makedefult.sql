@@ -10,12 +10,12 @@ primary key(timi)
 
 create table mannfjoldaspa(
 timi int,
-spa int,
+spa int
 );
 
 create table erlendirferda (
 fjoldi int,
-timi int,
+timi int
 );
 
 create table mannfjoldi(
