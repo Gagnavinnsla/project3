@@ -28,16 +28,9 @@ kostnm2 int,
 voxtur float
 );
 
-create table ungtfolk(
-fjoldi int
-voxtur float 
-timi int references fasteignaverd(timi)
-);
 
 create table haskolanam(
-laun int ,
-kostnadur int,
-voxtur int ,
+fjoldi int,
 timi int references fasteignaverd(timi)
 );
 
