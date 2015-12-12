@@ -1,3 +1,6 @@
+create database gagnasafn;
+\c gagnasafn
+
 create table fasteignaverd(
 ibudir int,
 timi int,
@@ -5,14 +8,13 @@ kostnm2 int,
 primary key(timi)
 );
 
-create table mannfjoldispa(
+create table mannfjoldaspa(
 timi int references fasteignaverd(timi),
 spa int
 );
 
 create table erlendirferda (
 fjoldi int,
-voxtur int,
 timi int references fasteignaverd(timi)
 );
 
@@ -34,6 +36,21 @@ aldur22til24ara int,
 aldur25til29 int
 );
 
+
+
+create table laun(
+timi int references fasteignaverd(timi),
+regluleglaun int
+);
+
+create table ibudirfullgerdar(
+timi int references fasteignaverd(timi),
+fjoldi int
+);
+
+
+
+
 create table leiguverd(
 timi int references fasteignaverd(timi),
 studiomedalverd int,
@@ -42,12 +59,6 @@ herb3medalverd int,
 herb4medalverd int,
 herb5medalverd int,
 herb6medalverd int,
-studiostaerd int,
-herb2steard int,
-herb3steard int,
-herb4steard int,
-herb5steard int,
-herb6steard int,
 studiossamning int,
 herb2samning int,
 herb3samning int,
