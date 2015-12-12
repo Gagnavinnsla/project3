@@ -8,7 +8,7 @@ kostnm2 int,
 primary key(timi)
 );
 
-create table mannfjoldispa(
+create table mannfjoldaspa(
 timi int references fasteignaverd(timi),
 spa int
 );
