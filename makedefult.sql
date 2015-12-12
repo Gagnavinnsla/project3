@@ -9,27 +9,27 @@ primary key(timi)
 );
 
 create table mannfjoldaspa(
-timi int references fasteignaverd(timi),
-spa int
+timi int,
+spa int,
 );
 
 create table erlendirferda (
 fjoldi int,
-timi int references fasteignaverd(timi)
+timi int,
 );
 
 create table mannfjoldi(
-timi int references fasteignaverd(timi),
+timi int,
 mannfjoldi int
 );
 
 create table haskolanam(
 fjoldi int,
-timi int references fasteignaverd(timi)
+timi int
 );
 
 create table utskrifadirhaskola(
-timi int references fasteignaverd(timi),
+timi int,
 yngri int,
 aldur20til21ara int,
 aldur22til24ara int,
@@ -39,12 +39,12 @@ aldur25til29 int
 
 
 create table laun(
-timi int references fasteignaverd(timi),
+timi int,
 regluleglaun int
 );
 
 create table ibudirfullgerdar(
-timi int references fasteignaverd(timi),
+timi int,
 fjoldi int
 );
 
@@ -52,7 +52,7 @@ fjoldi int
 
 
 create table leiguverd(
-timi int references fasteignaverd(timi),
+timi int,
 studiomedalverd int,
 herb2medalverd int,
 herb3medalverd int,
